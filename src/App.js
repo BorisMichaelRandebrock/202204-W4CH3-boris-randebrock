@@ -1,4 +1,5 @@
 import Button from "./components/Buttons/Buttons";
+import NumberButton from "./components/NumberButton/NumberButton";
 
 function App() {
   return (
@@ -7,48 +8,26 @@ function App() {
       <main className="phone">
         <div className="keyboard-container">
           <ol className="keyboard">
-            <li>
-              <button className="key">1</button>
-            </li>
-            <li>
-              <button className="key">2</button>
-            </li>
-            <li>
-              <button className="key">3</button>
-            </li>
-            <li>
-              <button className="key">4</button>
-            </li>
-            <li>
-              <button className="key">5</button>
-            </li>
-            <li>
-              <button className="key">6</button>
-            </li>
-            <li>
-              <button className="key">7</button>
-            </li>
-            <li>
-              <button className="key">8</button>
-            </li>
-            <li>
-              <button className="key">9</button>
-            </li>
-            <li>
-              <button className="key">0</button>
-            </li>
-            <li>
-              <button className="key big">delete</button>
-            </li>
+            <NumberButton number="1" onclick={() => {}} nameClass="key" />
+            <NumberButton number="2" onclick={() => {}} nameClass="key" />
+            <NumberButton number="3" onclick={() => {}} nameClass="key" />
+            <NumberButton number="4" onclick={() => {}} nameClass="key" />
+            <NumberButton number="5" onclick={() => {}} nameClass="key" />
+            <NumberButton number="6" onclick={() => {}} nameClass="key" />
+            <NumberButton number="7" onclick={() => {}} nameClass="key" />
+            <NumberButton number="8" onclick={() => {}} nameClass="key" />
+            <NumberButton number="9" onclick={() => {}} nameClass="key" />
+            <NumberButton number="0" onclick={() => {}} nameClass="key" />
+            <NumberButton
+              number="delete"
+              action={() => {}}
+              nameClass="key big"
+            />
           </ol>
         </div>
         <div className="actions">
           <span className="number">667359961</span>
-          <Button />
-
-          <a href="." className="hang active">
-            Hang
-          </a>
+          <Button className="number" />
         </div>
       </main>
     </div>
