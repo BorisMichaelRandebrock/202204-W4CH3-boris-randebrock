@@ -1,4 +1,5 @@
-import Button from "./components/Buttons/Buttons";
+import Button from "./components/Button/Button";
+import Display from "./components/Display/Display";
 import NumberButton from "./components/NumberButton/NumberButton";
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
           </ol>
         </div>
         <div className="actions">
-          <span className="number">667359961</span>
+          <Display className="number" number="1working19"></Display>
           <Button className="number" />
         </div>
       </main>

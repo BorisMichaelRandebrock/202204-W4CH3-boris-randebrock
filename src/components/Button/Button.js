@@ -9,11 +9,6 @@ const Button = ({ text }) => {
           Hang
         </a>
       </>
-
-      {/*     
-      <a href="." className="call">
-        {text}
-      </a> */}
     </>
   );
 };
