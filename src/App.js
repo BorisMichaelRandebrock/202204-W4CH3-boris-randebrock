@@ -1,3 +1,4 @@
+import CallingDisplay from "./CallingDisplay/CallingDisplay";
 import Button from "./components/Button/Button";
 import Display from "./components/Display/Display";
 import NumberButton from "./components/NumberButton/NumberButton";
@@ -5,7 +6,8 @@ import NumberButton from "./components/NumberButton/NumberButton";
 function App() {
   return (
     <div className="container">
-      <span className="message">Calling...</span>
+      <CallingDisplay className="message" text="Calling...isit?" />
+      {/* <span className="message">Calling...</span> */}
       <main className="phone">
         <div className="keyboard-container">
           <ol className="keyboard">
